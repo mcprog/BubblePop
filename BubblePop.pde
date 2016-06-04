@@ -1,4 +1,8 @@
-
+/**
+* @author Michael Curtis
+* @since 6/3/2016
+* @version 1.0.0
+**/
 ArrayList<Ball> balls = new ArrayList<Ball>();
 int faults;
 
