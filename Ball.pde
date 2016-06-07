@@ -4,8 +4,11 @@ class Ball {
   int xDir, yDir;
   float dX, dY;
   int radius;
-  //int hue, sat, bri;
+  
+  
   TweenHue hue;
+  
+  public static final int MARGIN_TOP = 30;
   
   Ball(float x, float y, float dX, float dY, int radius) {
      this.x= x;
@@ -29,7 +32,7 @@ class Ball {
       xDir *= -1;
     }
     
-    if (y + radius > height || y - radius <= 0) {
+    if (y + radius > height || y - radius <= 0 + MARGIN_TOP) {
       yDir *= -1;
     }
     
